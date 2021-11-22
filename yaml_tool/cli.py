@@ -19,8 +19,11 @@ def cli():
 
     with open(args.filename, mode='rt') as f:
         read = csv.reader(f, delimiter=',')
-        _ = next(read)
-        sorter = sorted(read, key=lambda row: (int(row[3]), -int(row[4])))
+        headers = next(read)
+        division = headers.index('division')
+        points = headers.index('points')
+        sorter = sorted(read, key=lambda row: (
+            int(row[division]), -int(row[points])))
 
     print("records:")
     for row in sorter[:3]:
