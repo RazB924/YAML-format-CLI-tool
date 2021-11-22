@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        yaml_tool=yaml_tool.cli:cli
+    
