@@ -10,3 +10,6 @@ For example, in order to run the tool with the CSV file provided run:
   
 
 The code for the tool can be found in YAML_format_CLI.py
+
+If there are any issues with installing check that the following packages are installed
+>>pip, setuptools, wheel
