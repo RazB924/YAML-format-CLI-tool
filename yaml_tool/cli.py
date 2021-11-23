@@ -28,4 +28,4 @@ def cli():
     print("records:")
     for row in sorter[:3]:
         print("""- name: {0} {1}
-    details: In division {2} from {3} performing {4}""".format(row[0], row[1], row[3], row[2], row[5]))
+  details: In division {2} from {3} performing {4}""".format(row[0], row[1], row[3], row[2], row[5]))
